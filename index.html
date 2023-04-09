@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+  </head>
+  <h1>Restaurant</h1>
+  <body>
+    <form onsubmit="billAmount(event)">
+      <label>Choose Price</label>
+      <input type="text" id="choose" name="choosePrice" required />
+      <label>Choose Dish</label>
+      <input type="text" id="dish" name="chooseDish" required />
+      <label for="tables">Choose a Table:</label>
+
+      <select name="tables" id="table">
+        <option value="table1">Table 1</option>
+        <option value="table2">Table 2</option>
+        <option value="table3">Table 3</option>
+        <option value="table4">Table 4</option>
+      </select>
+      <button>Submit</button>
+    </form>
+
+    <h2>Orders</h2>
+
+    <ul id="table1">
+      Table1
+    </ul>
+    <ul id="table2">
+      Table2
+    </ul>
+    <ul id="table3">
+      Table3
+    </ul>
+
+    <script src="script.js"></script>
+    <script src="
+    https://cdnjs.cloudflare.com/ajax/libs/axios/0.4.1/axios.min.js
+"></script>
+  </body>
+</html>
